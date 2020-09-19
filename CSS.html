@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>CSS Worksheet</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		table,
+		tr,
+		td {
+			border: 3px solid red;
+		}
+
+		td.text {
+			font-size: 100px;
+		}
+
+		td.ye {
+			background-color: yellow;
+		}
+
+		#ID {
+			border-collapse: separate;
+			border-color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>CSS styling basics</h1>
+	<section class="text-styling">
+		<h3>Text styling</h3>
+		<!-- Demo: red text -->
+		<p><span style="color:red">Roses are red </span><br/>
+    <!-- TODO: blue text,
+		left margins -->
+    <span style="color:blue;margin-left:50px">Violets are blue</span><br/>
+    <!-- TODO: text shadow -->
+    <span style="text-shadow: 1px 1px #ff0000">Text shadows are cool </span><br/>And so are you~</p>
+    <!-- TODO: Add corresponding alignments -->
+    <p>Left-aligned</p><p style="text-align:center">Center-aligned</p>
+    <p style="text-align:right">Right-aligned</p>
+    </section><hr/><section class="font-styling">
+      <h3>Font styling</h3><!-- DEMO: Verdana -->
+      <!-- TODO: font family, size and style -->
+      <p><span style="font-family:Verdana">Verdana</span>,
+		<span style="font-family:Arial">Arial</span>or <span style="font-family:TimesNewRoman">Times New Roman</span>?</p>
+    <p><span style="font-size:100px">Big text</span>or <span style="font-size:10px">small text</span>?</p>
+    <p><span style="font-style:italic">Italic</span>or <span style="font-style:oblique">oblique</span>?</p>
+    </section><hr/><section class="background-styling"><h3>Background styling</h3>
+    <!-- DEMO: color background -->
+    <div class="sq" style="background-color:red;width:100px;height:100px"></div>
+    <!-- TODO: color background -->
+    <div class="sq" style="background-color:yellow;width:100px;height:100px"></div>
+    </div>
+    <!-- TODO: image background -->
+    <div class="sq" style="background-image:url(https://www.elitereaders.com/wp-content/uploads/2018/04/mark-zuckerberg-funny-memes-10.gif);width:720px;height:720px"></div></div>
+    </section><hr/><section class="table-styling"><h3>Table styling</h3>
+    <!-- DEMO: table border,internal stylesheet this time -->
+    <!-- TODO: border collapse,width and height, text alignment,background color, color,padding -->
+    <!-- TODO: Give table an id -->
+    <table id="ID"><tr><td class="text">Lorem</td><td class="ye">Lorem</td><td>Lorem</td></tr><tr><td>Lorem</td><td>Lorem</td><td>Lorem</td></tr><tr><td>Lorem</td><td>Lorem</td><td>Lorem</td></tr></table></section><hr/><section class="position-styling">
+      <div class="sq bordered-div">
+      <!-- DEMO: Difference between static and relative positions -->
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <!-- TODO: Fixed and absolute positions -->
+      <div class="one"></div>
+      <div class="two"></div></div></section>
+      <!-- EXTRA: Not in syllabus -->
+      <!-- TODO: Try creating and using 2 different classes and ids for styling -->
+      <!-- Demo bootstrap responsiveness --><script src="script.js"></script></body></html>
